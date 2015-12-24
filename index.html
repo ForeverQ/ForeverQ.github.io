@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
 
 
 
@@ -53,38 +59,35 @@
 
 <meta name="description" content="IT&apos;S NEVER TOO LATE!">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Q小记">
+<meta property="og:title" content="Heng's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Q小记">
+<meta property="og:site_name" content="Heng's Blog">
 <meta property="og:description" content="IT&apos;S NEVER TOO LATE!">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Q小记">
+<meta name="twitter:title" content="Heng's Blog">
 <meta name="twitter:description" content="IT&apos;S NEVER TOO LATE!">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
-  <title> Q小记 </title>
+  <title> Heng's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -92,9 +95,14 @@
 
 
 
-  <div class="container one-column 
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
    page-home 
-">
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -104,7 +112,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Q小记</span>
+      <span class="site-title">Heng's Blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -129,6 +137,8 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
             首页
           </a>
         </li>
@@ -136,6 +146,8 @@
         
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
             分类
           </a>
@@ -145,6 +157,8 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
             归档
           </a>
         </li>
@@ -153,11 +167,14 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
             标签
           </a>
         </li>
       
 
+      
       
       
     </ul>
@@ -171,13 +188,23 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
 
     
 
     
+    
+      
+      
+        
+        
+        
+      
+
+      
     
 
     
@@ -212,7 +239,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-24T19:44:15+08:00" content="2015-12-24">
               2015-12-24
             </time>
@@ -220,7 +250,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/折腾/" itemprop="url" rel="index">
@@ -241,26 +275,29 @@
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
+          
+          渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
 先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
 
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 S
-            ...
-          </span>
+奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
+Solarized 应该是目前最完整的配色项目之一，先前听 内核恐慌 时候也听两位主播提起过。它主要分为 Light 和 Dark 两款方案分别使用明亮和暗淡的环境，个人非常偏爱 Dark 这款。
+想要在 MAC 终端舒服地使用 Solarized，需要给3
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/12/24/使用-Solarized-配色方案/#more" rel="contents">
               阅读全文 &raquo;
@@ -315,7 +352,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-13T21:18:56+08:00" content="2015-12-13">
               2015-12-13
             </time>
@@ -323,7 +363,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/折腾/" itemprop="url" rel="index">
@@ -344,25 +388,31 @@
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 IT 公论 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。
+          
+          这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 IT 公论 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。
 当时节目里提及的是 Divvy，奈其在 Linux 平台下，暂不考虑。在 V2EX 上搜索一番后还是决定暂时使用 MOOM，MAC 平台下的经典作。
-基本样子
-            ...
-          </span>
+基本样子是这样，
+
+会在窗口左上角全屏按钮的焦点下出现平铺窗口布局的选项，稍加设置后还能进行更为细致的布局，
+
+其设置界面稍显繁琐，但细细研究之后还是能理解。主要支持经典的 half screen、定制窗口大小、键盘控制等功能， 基本满足我的需求。
+官网原价是 10 刀，看了下 谋点利 上的价格是 ￥45，
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/12/13/chuang-kou-guan-li-ruan-jian-moom/#more" rel="contents">
               阅读全文 &raquo;
@@ -417,7 +467,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-12T22:46:16+08:00" content="2015-12-12">
               2015-12-12
             </time>
@@ -425,7 +478,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/git/" itemprop="url" rel="index">
@@ -446,26 +503,33 @@
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            前两天在 Codecademy 在线学习了 git 课程，感觉颇为实用，也消除了我对 git 的一些困惑。
+          
+          前两天在 Codecademy 在线学习了 git 课程，感觉颇为实用，也消除了我对 git 的一些困惑。
 git 基本操作初始化1git init
 init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的组件，表现上来看，会在文件夹内生成一个 .git 隐藏文件。
-概念模型git 的基本
-            ...
-          </span>
+概念模型git 的基本逻辑分为三个部分：
+
+Working Directory，文件系统的概念，创建、编辑、删除和组织文件的空间。
+Staging Area，展现所有改动的空间，实际的 git 操作都是以此为中心。
+Repository，对应 Github 中 Repo 的概念，储存整个项目所有改动版本。
+
+git 的 
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/12/12/git-jian-yao-xue-xi-ri-zhi/#more" rel="contents">
               阅读全文 &raquo;
@@ -520,7 +584,10 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-08-20T16:19:01+08:00" content="2015-08-20">
               2015-08-20
             </time>
@@ -528,7 +595,11 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/others/" itemprop="url" rel="index">
@@ -549,27 +620,29 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
 
           
 
+          
+          
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            
+          
+          
 很久之前就想搭建博客，万恶的拖延症。。。
 
 来由搭建博客的原因很简单，在搜索和解决问题的时候都会找到别人的技术博客，久而久之，也想自己搭建。
-当时觉得有两个问题都不好下手（还是拖延症），一个是博客系统，另一个是部署服务器，也就是的 Dev 和 Ops。不得不说，吴涛和 Rio 主持的博客 内核恐慌
-            ...
-          </span>
+当时觉得有两个问题都不好下手（还是拖延症），一个是博客系统，另一个是部署服务器，也就是的 Dev 和 Ops。不得不说，吴涛和 Rio 主持的博客 内核恐慌 给了我很多启发，作为一个从第一期就开始听的脑残粉，到目前居然都没有过 donate，实在惭愧。。。
+建博客的另一个原因是想克服拖延症。回顾过去，经常会想不起做过了什么，好像时间都被荒废了，我期望有个博客记点东西能改善这个状况。之前为了解决这个问题已经尝试在写日记，但现实是天天写真的太难坚持，这年头
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/08/20/my-first-blog/#more" rel="contents">
               阅读全文 &raquo;
@@ -599,17 +672,15 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
   
 
 
+          </div>
+          
+
+
+          
+
         </div>
-
         
-
-
-        
-
-      </div>
-
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -628,10 +699,12 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/avatar.jpg" alt="ForeverQ" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="ForeverQ" />
           <p class="site-author-name" itemprop="name">ForeverQ</p>
+          <p class="site-description motion-element" itemprop="description">IT'S NEVER TOO LATE!</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">IT'S NEVER TOO LATE!</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -664,7 +737,7 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
               <span class="links-of-author-item">
                 <a href="https://github.com/ForeverQ" target="_blank">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-github"></i> GitHub
                   
                 </a>
               </span>
@@ -672,7 +745,7 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
               <span class="links-of-author-item">
                 <a href="https://twitter.com/ForeverQH" target="_blank">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-twitter"></i> Twitter
                   
                 </a>
               </span>
@@ -680,7 +753,7 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
               <span class="links-of-author-item">
                 <a href="http://weibo.com/u/1995185815" target="_blank">
                   
-                    <i class="fa fa-globe"></i> weibo
+                    <i class="fa fa-weibo"></i> 微博
                   
                 </a>
               </span>
@@ -688,7 +761,7 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
               <span class="links-of-author-item">
                 <a href="http://www.zhihu.com/people/q-forever" target="_blank">
                   
-                    <i class="fa fa-globe"></i> zhihu
+                    <i class="fa fa-globe"></i> 知乎
                   
                 </a>
               </span>
@@ -711,7 +784,8 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -733,7 +807,7 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -745,44 +819,68 @@ init 意思是初始化，作用是设置所有 git 跟踪文件改动所需的�
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-    
-
-  
-
-
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
   
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+
+
+  
+
+
 
   
   
 
   
   
+
 
 </body>
 </html>
