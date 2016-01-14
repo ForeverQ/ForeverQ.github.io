@@ -229,6 +229,116 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/14/github-webhooks/" itemprop="url">
+                  利用 Github Webhooks 实现博客自动部署
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-14T17:12:33+08:00" content="2016-01-14">
+              2016-01-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          这两天总算实现了 Rio 在内核恐慌 那期节目 所说，写 Blog 时候不碰命令行的愿望。具体原理就是利用 GitHub 的 Webhook 接口实现博客的自动化部署。
+准备工作首先从网上搜罗一番资料，这是 官方文档，另外发现用于侦听 webhooks 的脚本语言多种多样，包括 Python、PHP 等等。最后，还是参考 这篇 博客用了 node.js，也因此学习了些 node 基本语法。
+当然，我和他们的需求还稍有不同。多数自动部署的情况是直接把 git 放在网站的根目录，一旦 GitHub 上有 push 的事件，就通过侦听 GitHub 的钩子，执行 pull``` 操作把源码拉到根目录
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/14/github-webhooks/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/01/可能是最靠谱的职业测试/" itemprop="url">
                   可能是最靠谱的职业测试
                 </a>
@@ -942,7 +1052,7 @@ git 的
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

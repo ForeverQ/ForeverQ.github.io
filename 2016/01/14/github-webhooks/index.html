@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Mac," />
+  <meta name="keywords" content="Hexo,运维," />
 
 
 
@@ -57,31 +57,23 @@
 
 
 
-<meta name="description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
+<meta name="description" content="这两天总算实现了 Rio 在内核恐慌 那期节目 所说，写 Blog 时候不碰命令行的愿望。具体原理就是利用 GitHub 的 Webhook 接口实现博客的自动化部署。
+准备工作首先从网上搜罗一番资料，这是 官方文档，另外发现用于侦听 webhooks 的脚本语言多种多样，包括 Python、PHP 等等。最后，还是参考 这篇 博客用了 node.js，也因此学习了些 node 基本语法。
+当然，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Solarized 配色方案">
-<meta property="og:url" content="http://yoursite.com/2015/12/24/使用-Solarized-配色方案/index.html">
+<meta property="og:title" content="利用 Github Webhooks 实现博客自动部署">
+<meta property="og:url" content="http://yoursite.com/2016/01/14/github-webhooks/index.html">
 <meta property="og:site_name" content="Heng's Blog">
-<meta property="og:description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/006kPMzBgw1ezawov7342j30zy0twn3r.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/mw1024/006kPMzBgw1ezawotvtnqj30hm0id0v5.jpg">
-<meta property="og:image" content="http://ww3.sinaimg.cn/mw1024/006kPMzBgw1ezawoufcfnj30hn03daah.jpg">
-<meta property="og:updated_time" content="2015-12-24T15:18:40.278Z">
+<meta property="og:description" content="这两天总算实现了 Rio 在内核恐慌 那期节目 所说，写 Blog 时候不碰命令行的愿望。具体原理就是利用 GitHub 的 Webhook 接口实现博客的自动化部署。
+准备工作首先从网上搜罗一番资料，这是 官方文档，另外发现用于侦听 webhooks 的脚本语言多种多样，包括 Python、PHP 等等。最后，还是参考 这篇 博客用了 node.js，也因此学习了些 node 基本语法。
+当然，">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/006kPMzBgw1ezz74kylbzj31im0ywgqt.jpg">
+<meta property="og:updated_time" content="2016-01-14T10:27:58.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 Solarized 配色方案">
-<meta name="twitter:description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
+<meta name="twitter:title" content="利用 Github Webhooks 实现博客自动部署">
+<meta name="twitter:description" content="这两天总算实现了 Rio 在内核恐慌 那期节目 所说，写 Blog 时候不碰命令行的愿望。具体原理就是利用 GitHub 的 Webhook 接口实现博客的自动化部署。
+准备工作首先从网上搜罗一番资料，这是 官方文档，另外发现用于侦听 webhooks 的脚本语言多种多样，包括 Python、PHP 等等。最后，还是参考 这篇 博客用了 node.js，也因此学习了些 node 基本语法。
+当然，">
 
 
 
@@ -99,7 +91,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
   };
 </script>
 
-  <title> 使用 Solarized 配色方案 | Heng's Blog </title>
+  <title> 利用 Github Webhooks 实现博客自动部署 | Heng's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -227,7 +219,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
             
             
               
-                使用 Solarized 配色方案
+                利用 Github Webhooks 实现博客自动部署
               
             
           </h1>
@@ -239,8 +231,8 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-24T19:44:15+08:00" content="2015-12-24">
-              2015-12-24
+            <time itemprop="dateCreated" datetime="2016-01-14T17:12:33+08:00" content="2016-01-14">
+              2016-01-14
             </time>
           </span>
 
@@ -253,8 +245,8 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/折腾/" itemprop="url" rel="index">
-                    <span itemprop="name">折腾</span>
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
                   </a>
                 </span>
 
@@ -284,23 +276,25 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
       
 
       
-        <p>渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。</p>
-<p>先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，</p>
-<p><img src="http://ww4.sinaimg.cn/large/006kPMzBgw1ezawov7342j30zy0twn3r.jpg" alt="Mac Terminal" title="Mac Terminal"></p>
-<p>奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。</p>
-<p><a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized</a> 应该是目前最完整的配色项目之一，先前听 <a href="http://ipn.li/kernelpanic/5/" target="_blank" rel="external">内核恐慌</a> 时候也听两位主播提起过。它主要分为 Light 和 Dark 两款方案分别使用明亮和暗淡的环境，个人非常偏爱 Dark 这款。</p>
-<p>想要在 MAC 终端舒服地使用 Solarized，需要给3个工具分别设置，Terminal、Vim 以及 ls。</p>
-<p><a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized 官网</a> 给出了几种下载安装的方式，最推荐的当属 git：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/altercation/solarized.git</span><br></pre></td></tr></table></figure>
-<h2 id="Terminal/iTerm2"><a href="#Terminal/iTerm2" class="headerlink" title="Terminal/iTerm2"></a>Terminal/iTerm2</h2><p>Mac 环境下主要是自带的 Terminal 和 iTerm2 两个终端仿真器，iTerm2 因为对 split window 支持更好，更方便一些。</p>
-<p>从 git 克隆下来的文件夹里已经分别放置了针对 Terminal 和 iTerm2 的配置文件，找到相应文件夹双击打开就会自动导入配色方案 Light 和 Dark。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>Vim 的配色如果不单独设置会十分别扭，Github 上也有 Vim 单独的 <a href="https://github.com/altercation/vim-colors-solarized" target="_blank" rel="external">repo</a>，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/altercation/vim-colors-solarized.git</span><br><span class="line">$ <span class="built_in">cd</span> vim-colors-solarized/colors</span><br><span class="line">$ mkdir -p ~/.vim/colors</span><br><span class="line">$ cp solarized.vim ~/.vim/colors/</span><br><span class="line"></span><br><span class="line">$ vim ~/.vimrc</span><br><span class="line">syntax <span class="built_in">enable</span></span><br><span class="line"><span class="built_in">set</span> background=dark</span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure>
-<p>大概像这样：</p>
-<p><img src="http://ww4.sinaimg.cn/mw1024/006kPMzBgw1ezawotvtnqj30hm0id0v5.jpg" alt="Java Demo" title="Java Demo"></p>
-<h2 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h2><p>查阅了一些资料，了解到 Mac OS X 是基于 FreeBSD 的，所以一些工具 ls, top 等都是 BSD 那一套，ls 不是 GNU ls，所以即使 Terminal/iTerm2 配置了颜色，但是在 Mac 上敲入 ls 命令也不会显示高亮，可以通过安装 coreutils 来解决（brew install coreutils），不过如果对 ls 颜色不挑剔的话有个简单办法就是在 .bash_profile 里输出 CLICOLOR=1：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ vim ~/.bash_profile</span><br><span class="line"><span class="built_in">export</span> CLICOLOR=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://ww3.sinaimg.cn/mw1024/006kPMzBgw1ezawoufcfnj30hn03daah.jpg" alt="ls Demo" title="ls Demo"></p>
+        <p>这两天总算实现了 Rio 在内核恐慌 <a href="http://ipn.li/kernelpanic/3/" target="_blank" rel="external">那期节目</a> 所说，写 Blog 时候不碰命令行的愿望。具体原理就是利用 GitHub 的 Webhook 接口实现博客的自动化部署。</p>
+<h2 id="u51C6_u5907_u5DE5_u4F5C"><a href="#u51C6_u5907_u5DE5_u4F5C" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先从网上搜罗一番资料，这是 <a href="https://developer.github.com/webhooks/" target="_blank" rel="external">官方文档</a>，另外发现用于侦听 webhooks 的脚本语言多种多样，包括 Python、PHP 等等。最后，还是参考 <a href="http://www.lovelucy.info/auto-deploy-website-by-webhooks-of-github-and-gitlab.html" target="_blank" rel="external">这篇</a> 博客用了 node.js，也因此学习了些 node 基本语法。</p>
+<p>当然，我和他们的需求还稍有不同。多数自动部署的情况是直接把 git 放在网站的根目录，一旦 GitHub 上有 push 的事件，就通过侦听 GitHub 的钩子，执行 <figure class="highlight"><figcaption><span>pull``` 操作把源码拉到根目录即完成部署。而我的博客是 Host 在 Github Page 上，并非 Host 在自己的 vps 上（备案的苦。。。），所以我的方案是把 git 丢在 Hexo 的 source 目录下，脚本除了执行 pull 操作外还要加上 Hexo 的生成和部署，于是最终实现在 GitHub 上写博客，最终仍旧 deploy 回 GitHub。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#31616;&#21333;&#20889;&#19968;&#20010; shell &#33050;&#26412; deploy.sh&#10;&#10;``` bash&#10;#!/bin/bash&#10;&#10;WEB_PATH=&#39;your_source_of_hexo&#39;&#10;&#10;echo &#34;Start generation and deployment&#34;&#10;cd $WEB_PATH&#10;echo &#34;pulling source code...&#34;&#10;git pull origin master&#10;echo &#34;generate and deploy...&#34;&#10;cd ..&#10;hexo clean&#10;hexo g&#10;hexo d&#10;echo &#34;Finished.&#34;</span><br></pre></td></tr></table></figure></p>
+<p>接下来就需要侦听钩子在每次有 push 操作时执行这个脚本。</p>
+<h2 id="Web_Hooks"><a href="#Web_Hooks" class="headerlink" title="Web Hooks"></a>Web Hooks</h2><p>点击 GitHub 上对应 repo 的 settings 选项，看到 Webhooks &amp; Services 设定</p>
+<p><img src="http://ww3.sinaimg.cn/large/006kPMzBgw1ezz74kylbzj31im0ywgqt.jpg" alt="" title="GitHub Webhooks"></p>
+<p>需要在 Payload URL 上填写执行脚本的服务器地址，比如 <a href="http://xx.xx/webhook。之后，GitHub" target="_blank" rel="external">http://xx.xx/webhook。之后，GitHub</a> 默认会在每次有 push 事件的时候，朝这个地址发送一个 POST 请求。GitHub 还有一个 Secret 的设定，用于在 POST 请求的 HTTP 头中带上一个 Hash 值做验证，以确保该 POST 请求是从 GitHub 发来的，填上喜欢的字符串即可。</p>
+<p>接下来就是重头戏写监听脚本了。对于 node.js 有一个现成的中间件 <a href="https://github.com/rvagg/github-webhook-handler" target="_blank" rel="external">github-webhook-handler</a>，安装方法如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g github-webhook-handler</span><br></pre></td></tr></table></figure>
+<p>参考作者 GitHub 上的例子，写下监听程序 deploy.js</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&#39;http&#39;)&#10;var createHandler = require(&#39;github-webhook-handler&#39;)&#10;var handler = createHandler(&#123; path: &#39;/webhook&#39;, secret: &#39;secret_you_like&#39; &#125;)&#10;&#10;function run_cmd(cmd, args, callback) &#123;&#10;  var spawn = require(&#39;child_process&#39;).spawn;&#10;  var child = spawn(cmd, args);&#10;  var resp = &#34;&#34;;&#10;&#10;  child.stdout.on(&#39;data&#39;, function(buffer) &#123; resp += buffer.toString(); &#125;);&#10;  child.stdout.on(&#39;end&#39;, function() &#123; callback (resp) &#125;);&#10;&#125;&#10;&#10;http.createServer(function (req, res) &#123;&#10;  handler(req, res, function (err) &#123;&#10;    res.statusCode = 404&#10;    res.end(&#39;no such location&#39;)&#10;  &#125;)&#10;&#125;).listen(7777)&#10;&#10;handler.on(&#39;error&#39;, function (err) &#123;&#10;  console.error(&#39;Error:&#39;, err.message)&#10;&#125;)&#10;&#10;handler.on(&#39;push&#39;, function (event) &#123;&#10;  console.log(&#39;Received a push event for %s to %s&#39;,&#10;    event.payload.repository.name,&#10;    event.payload.ref);&#10;  run_cmd(&#39;sh&#39;, [&#39;./deploy.sh&#39;], function(text)&#123; console.log(text) &#125;);&#10;&#125;)</span><br></pre></td></tr></table></figure>
+<p>总体结构就是监听 7777 端口的 push 事件，之后执行先前写好的 bash 脚本执行部署操作。不得不说， node 写服务器脚本确实非常方便。<figure class="highlight"><figcaption><span>方法简直算得上是其精髓。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#36825;&#26679;&#30452;&#25509;&#23601;&#33021;&#36305;&#36215;&#26469;&#20102;&#10;&#10;``` bash&#10;$ node deploy.js</span><br></pre></td></tr></table></figure></p>
+<p>测试了一下，控制台出现监听信息，看起来没问题。不过为了防止 Node.js 自己挂掉，可以开启进程管理服务 <a href="https://github.com/foreverjs/forever" target="_blank" rel="external">forever</a>，其在 GitHub 也是获赞无数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g forever</span><br><span class="line">$ forever start deploy.js</span><br></pre></td></tr></table></figure>
+<p>这样可以保证 Node 在运行过程中如果挂了，可以自动重启一个进程，保证服务仍然可用。forever 功能简单明了，每启动一个进程就会单独创建一个 log 记录日志。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ forever list</span><br><span class="line">$ forever stop <span class="number">0</span></span><br><span class="line">$ forever logs</span><br></pre></td></tr></table></figure>
+<p>最后，不要忘记启动 Nginx 把对应 URL 的请求反向代理到 7777 端口。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">server</span> &#123;</span><br><span class="line">	<span class="title">listen</span> <span class="number">80</span>;</span><br><span class="line">	<span class="title">server_name</span> xxxxx;</span><br><span class="line"></span><br><span class="line">	<span class="title">location</span> / &#123;</span><br><span class="line">		<span class="comment"># ...</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="title">location</span> /webhook &#123;</span><br><span class="line">		<span class="title">proxy_pass</span> <span class="url">http://127.0.0.1:7777</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>GitHub 好玩的东西真的挺多。</p>
 
       
     </div>
@@ -309,7 +303,9 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
       
         <div class="post-tags">
           
-            <a href="/tags/Mac/" rel="tag">#Mac</a>
+            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+          
+            <a href="/tags/运维/" rel="tag">#运维</a>
           
         </div>
       
@@ -318,17 +314,13 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/13/chuang-kou-guan-li-ruan-jian-moom/" rel="next" title="窗口管理软件 MOOM">
-                <i class="fa fa-chevron-left"></i> 窗口管理软件 MOOM
+              <a href="/2016/01/01/可能是最靠谱的职业测试/" rel="next" title="可能是最靠谱的职业测试">
+                <i class="fa fa-chevron-left"></i> 可能是最靠谱的职业测试
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/25/从-Octopress-迁移到-Hexo/" rel="prev" title="从 Octopress 迁移到 Hexo">
-                从 Octopress 迁移到 Hexo <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +468,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Terminal/iTerm2"><span class="nav-number">1.</span> <span class="nav-text">Terminal/iTerm2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim"><span class="nav-number">2.</span> <span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ls"><span class="nav-number">3.</span> <span class="nav-text">ls</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u51C6_u5907_u5DE5_u4F5C"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web_Hooks"><span class="nav-number">2.</span> <span class="nav-text">Web Hooks</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
