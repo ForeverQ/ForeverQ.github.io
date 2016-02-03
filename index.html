@@ -229,6 +229,120 @@
             
               
                 
+                <a class="post-title-link" href="/2016/02/03/linux-shell-learning/" itemprop="url">
+                  Linux Shell 中 >/dev/null 2>&1 的含义
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-03T18:58:06+08:00" content="2016-02-03">
+              2016-02-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          今天研究 V2EX 签到脚本的时候，看到 Crontab 脚本中 &gt;/dev/null 2&gt;&amp;1 这样的写法甚是疑惑，于是查阅资料一探究竟。
+首先解释一下此命令的含义是「将程序的标准输出和错误信息一同丢弃」。
+具体来说，
+/dev/null 代表空设备文件，即不存在的设备；
+&gt; 代表重定向，比如 echo test&gt;1.txt 就是把 text 这个文本输出到 1.txt 这个文件中；
+关于 1 和 2，在 /usr/include/unistd.h 中，可以找到如下代码：
+#define STDIN_FILENO    0   #define STDOUT_F
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/03/linux-shell-learning/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/27/n5-crack-lte/" itemprop="url">
                   Nexus 5 破解 LTE 的坑爹经历
                 </a>
@@ -1163,7 +1277,7 @@ git 的
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1177,7 +1291,7 @@ git 的
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

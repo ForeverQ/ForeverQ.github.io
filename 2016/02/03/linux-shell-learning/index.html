@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Crontab,Linux," />
 
 
 
@@ -57,30 +57,28 @@
 
 
 
-<meta name="description" content="这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 IT 公论 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。
-当时节目里提及的是 Divvy，奈其在 Linux 平台下，暂不考虑。在 V2EX 上搜索一番后还是决定暂时使用 MOOM，MAC 平台下的经典作。
-基本样子是这样，
-
-会在窗口左上角全屏按钮的焦点下出现平铺窗口布局的选项，稍加设置后还能进行更为细致的布局，">
+<meta name="description" content="今天研究 V2EX 签到脚本的时候，看到 Crontab 脚本中 &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 这样的写法甚是疑惑，于是查阅资料一探究竟。
+首先解释一下此命令的含义是「将程序的标准输出和错误信息一同丢弃」。
+具体来说，
+/dev/null 代表空设备文件，即不存在的设备；
+&amp;gt; 代表重定向，比如 echo test&amp;gt;1.txt 就是把 text 这个文本输出到 1.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="窗口管理软件 MOOM">
-<meta property="og:url" content="http://yoursite.com/2015/12/13/chuang-kou-guan-li-ruan-jian-moom/index.html">
+<meta property="og:title" content="Linux Shell 中 >/dev/null 2>&1 的含义">
+<meta property="og:url" content="http://yoursite.com/2016/02/03/linux-shell-learning/index.html">
 <meta property="og:site_name" content="Heng's Blog">
-<meta property="og:description" content="这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 IT 公论 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。
-当时节目里提及的是 Divvy，奈其在 Linux 平台下，暂不考虑。在 V2EX 上搜索一番后还是决定暂时使用 MOOM，MAC 平台下的经典作。
-基本样子是这样，
-
-会在窗口左上角全屏按钮的焦点下出现平铺窗口布局的选项，稍加设置后还能进行更为细致的布局，">
-<meta property="og:image" content="https://manytricks.com/moom/images/showcase/-10.jpg">
-<meta property="og:image" content="https://manytricks.com/moom/images/grid.png">
-<meta property="og:updated_time" content="2015-12-24T08:30:52.491Z">
+<meta property="og:description" content="今天研究 V2EX 签到脚本的时候，看到 Crontab 脚本中 &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 这样的写法甚是疑惑，于是查阅资料一探究竟。
+首先解释一下此命令的含义是「将程序的标准输出和错误信息一同丢弃」。
+具体来说，
+/dev/null 代表空设备文件，即不存在的设备；
+&amp;gt; 代表重定向，比如 echo test&amp;gt;1.txt 就是把 text 这个文本输出到 1.">
+<meta property="og:updated_time" content="2016-02-03T12:14:34.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="窗口管理软件 MOOM">
-<meta name="twitter:description" content="这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 IT 公论 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。
-当时节目里提及的是 Divvy，奈其在 Linux 平台下，暂不考虑。在 V2EX 上搜索一番后还是决定暂时使用 MOOM，MAC 平台下的经典作。
-基本样子是这样，
-
-会在窗口左上角全屏按钮的焦点下出现平铺窗口布局的选项，稍加设置后还能进行更为细致的布局，">
+<meta name="twitter:title" content="Linux Shell 中 >/dev/null 2>&1 的含义">
+<meta name="twitter:description" content="今天研究 V2EX 签到脚本的时候，看到 Crontab 脚本中 &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 这样的写法甚是疑惑，于是查阅资料一探究竟。
+首先解释一下此命令的含义是「将程序的标准输出和错误信息一同丢弃」。
+具体来说，
+/dev/null 代表空设备文件，即不存在的设备；
+&amp;gt; 代表重定向，比如 echo test&amp;gt;1.txt 就是把 text 这个文本输出到 1.">
 
 
 
@@ -98,7 +96,7 @@
   };
 </script>
 
-  <title> 窗口管理软件 MOOM | Heng's Blog </title>
+  <title> Linux Shell 中 >/dev/null 2>&1 的含义 | Heng's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -226,7 +224,7 @@
             
             
               
-                窗口管理软件 MOOM
+                Linux Shell 中 >/dev/null 2>&1 的含义
               
             
           </h1>
@@ -238,8 +236,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-13T21:18:56+08:00" content="2015-12-13">
-              2015-12-13
+            <time itemprop="dateCreated" datetime="2016-02-03T18:58:06+08:00" content="2016-02-03">
+              2016-02-03
             </time>
           </span>
 
@@ -252,8 +250,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/折腾/" itemprop="url" rel="index">
-                    <span itemprop="name">折腾</span>
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
                   </a>
                 </span>
 
@@ -283,36 +281,43 @@
       
 
       
-        <p>这两天做事常苦恼于繁琐地来回拖动窗口，想到前段时间听 <a href="http://ipn.li/itgonglun/" target="_blank" rel="external">IT 公论</a> 提及窗口管理时也认同其是个「被忽视却又非常重要」的问题，于是决定使用软件。</p>
-<p>当时节目里提及的是 <a href="http://mizage.com/divvy/" target="_blank" rel="external">Divvy</a>，奈其在 Linux 平台下，暂不考虑。在 <a href="https://www.v2ex.com" target="_blank" rel="external">V2EX</a> 上搜索一番后还是决定暂时使用 <a href="https://manytricks.com/moom/" target="_blank" rel="external">MOOM</a>，MAC 平台下的经典作。</p>
-<p>基本样子是这样，</p>
-<p><img src="https://manytricks.com/moom/images/showcase/-10.jpg" alt="moom_demo" title="moom_demo"></p>
-<p>会在窗口左上角全屏按钮的焦点下出现平铺窗口布局的选项，稍加设置后还能进行更为细致的布局，</p>
-<p><img src="https://manytricks.com/moom/images/grid.png" alt="moom_grid" title="moom_grid"></p>
-<p>其设置界面稍显繁琐，但细细研究之后还是能理解。主要支持经典的 half screen、定制窗口大小、键盘控制等功能， 基本满足我的需求。</p>
-<p>官网原价是 10 刀，看了下 <a href="http://mou.li/" target="_blank" rel="external">谋点利</a> 上的价格是 ￥45，说明了也是和软件作者的团购合作，果断购入。</p>
+        <p>今天研究 V2EX 签到脚本的时候，看到 Crontab 脚本中 <code>&gt;/dev/null 2&gt;&amp;1</code> 这样的写法甚是疑惑，于是查阅资料一探究竟。</p>
+<p>首先解释一下此命令的含义是「将程序的标准输出和错误信息一同丢弃」。</p>
+<p>具体来说，</p>
+<p><code>/dev/null</code> 代表空设备文件，即不存在的设备；</p>
+<p><code>&gt;</code> 代表重定向，比如 <code>echo test&gt;1.txt</code> 就是把 text 这个文本输出到 <code>1.txt</code> 这个文件中；</p>
+<p>关于 <code>1</code> 和 <code>2</code>，在 <code>/usr/include/unistd.h</code> 中，可以找到如下代码：</p>
+<p><code>#define STDIN_FILENO    0   #define STDOUT_FILENO   1   #define STDERR_FILENO   2</code></p>
+<p>这是三种不同的流，于是 <code>1</code> 代表 <code>stdout</code>，<code>2</code> 代表 <code>stderr</code>；</p>
+<p><code>&amp;&gt;</code> 意为「等同于」，表示左边的内容以符号右边的形式输出，所以 <code>2&amp;&gt;1</code> 就是把 <code>stderr</code> 作为 <code>stdout</code> 输出。</p>
+<p>总的来说，<code>&gt;/dev/null 2&gt;&amp;1</code> 首先通过 <code>2&amp;&gt;1</code> 定义了把 <code>stderr</code> 作为 <code>stdout</code> 流输出，然后再把 <code>stdout</code> 的内容写入 <code>/dev/null</code>，也就是丢弃掉。当然，如果把 <code>/dev/null</code> 改成别的，即可记录控制台日志了。</p>
+<p>另外有关 <code>cmd &gt;a 2&gt;a</code> 和 <code>cmd &gt;a 2&gt;&amp;1</code> 的区别以及一些更详细的例子，可点击 <a href="http://blog.csdn.net/ithomer/article/details/9288353" target="_blank" rel="external">这里</a> 参考此博文。</p>
 
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Crontab/" rel="tag">#Crontab</a>
+          
+            <a href="/tags/Linux/" rel="tag">#Linux</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/12/git-jian-yao-xue-xi-ri-zhi/" rel="next" title="git 简要学习日志">
-                <i class="fa fa-chevron-left"></i> git 简要学习日志
+              <a href="/2016/01/27/n5-crack-lte/" rel="next" title="Nexus 5 破解 LTE 的坑爹经历">
+                <i class="fa fa-chevron-left"></i> Nexus 5 破解 LTE 的坑爹经历
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/24/使用-Solarized-配色方案/" rel="prev" title="使用 Solarized 配色方案">
-                使用 Solarized 配色方案 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
