@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Mac," />
+  <meta name="keywords" content="Docker,Mac,运维," />
 
 
 
@@ -57,31 +57,19 @@
 
 
 
-<meta name="description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
+<meta name="description" content="最近研究 Python 通过 Docker 搭建开发环境和快速部署的实践，参考 GitHub 上面一个很不错的 OJ 项目。项目文档写得很详细，本想在本机上轻松搭建开发环境，没想到 Mac 上的 Docker 因为隔了层虚拟机，具体实现上来各种问题。
+关于 Docker我的理解，Docker 是一个从 Linux 上基于容器发展起来的超轻量级「虚拟环境」，它将每个应用分为一个个容器隔离开来，建立成">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Solarized 配色方案">
-<meta property="og:url" content="http://yoursite.com/2015/12/24/使用-Solarized-配色方案/index.html">
+<meta property="og:title" content="Docker 实践和 Mac 上的坑">
+<meta property="og:url" content="http://yoursite.com/2016/05/27/docker-mac/index.html">
 <meta property="og:site_name" content="Heng's Blog">
-<meta property="og:description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/006kPMzBgw1ezawov7342j30zy0twn3r.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/mw1024/006kPMzBgw1ezawotvtnqj30hm0id0v5.jpg">
-<meta property="og:image" content="http://ww3.sinaimg.cn/mw1024/006kPMzBgw1ezawoufcfnj30hn03daah.jpg">
-<meta property="og:updated_time" content="2015-12-24T15:18:40.278Z">
+<meta property="og:description" content="最近研究 Python 通过 Docker 搭建开发环境和快速部署的实践，参考 GitHub 上面一个很不错的 OJ 项目。项目文档写得很详细，本想在本机上轻松搭建开发环境，没想到 Mac 上的 Docker 因为隔了层虚拟机，具体实现上来各种问题。
+关于 Docker我的理解，Docker 是一个从 Linux 上基于容器发展起来的超轻量级「虚拟环境」，它将每个应用分为一个个容器隔离开来，建立成">
+<meta property="og:updated_time" content="2016-05-27T15:53:43.109Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用 Solarized 配色方案">
-<meta name="twitter:description" content="渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。
-先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，
-
-奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。
-Solarized 应该是目前最完整的配色项目之一，先前听">
+<meta name="twitter:title" content="Docker 实践和 Mac 上的坑">
+<meta name="twitter:description" content="最近研究 Python 通过 Docker 搭建开发环境和快速部署的实践，参考 GitHub 上面一个很不错的 OJ 项目。项目文档写得很详细，本想在本机上轻松搭建开发环境，没想到 Mac 上的 Docker 因为隔了层虚拟机，具体实现上来各种问题。
+关于 Docker我的理解，Docker 是一个从 Linux 上基于容器发展起来的超轻量级「虚拟环境」，它将每个应用分为一个个容器隔离开来，建立成">
 
 
 
@@ -99,7 +87,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
   };
 </script>
 
-  <title> 使用 Solarized 配色方案 | Heng's Blog </title>
+  <title> Docker 实践和 Mac 上的坑 | Heng's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -227,7 +215,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
             
             
               
-                使用 Solarized 配色方案
+                Docker 实践和 Mac 上的坑
               
             
           </h1>
@@ -239,8 +227,8 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-24T19:44:15+08:00" content="2015-12-24">
-              2015-12-24
+            <time itemprop="dateCreated" datetime="2016-05-27T02:41:28+08:00" content="2016-05-27">
+              2016-05-27
             </time>
           </span>
 
@@ -253,8 +241,8 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/折腾/" itemprop="url" rel="index">
-                    <span itemprop="name">折腾</span>
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
                   </a>
                 </span>
 
@@ -284,23 +272,27 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
       
 
       
-        <p>渐渐发觉泡在终端的时间越来越多了。以前在 MAC 上都是用 terminal 默认白色背景的配色，如今稍有空闲，决定把配色的事搞一搞。</p>
-<p>先是在网上搜索 MAC 终端配色方案，看到在其偏好设置里居然是有不同配色选择。看起来长这样，</p>
-<p><img src="http://ww4.sinaimg.cn/large/006kPMzBgw1ezawov7342j30zy0twn3r.jpg" alt="Mac Terminal" title="Mac Terminal"></p>
-<p>奈其选择有限，也并不好看，加之搜索时又无意瞥见大名鼎鼎的配色方案 Solarized，感觉还不错，决定一试。</p>
-<p><a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized</a> 应该是目前最完整的配色项目之一，先前听 <a href="http://ipn.li/kernelpanic/5/" target="_blank" rel="external">内核恐慌</a> 时候也听两位主播提起过。它主要分为 Light 和 Dark 两款方案分别使用明亮和暗淡的环境，个人非常偏爱 Dark 这款。</p>
-<p>想要在 MAC 终端舒服地使用 Solarized，需要给3个工具分别设置，Terminal、Vim 以及 ls。</p>
-<p><a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized 官网</a> 给出了几种下载安装的方式，最推荐的当属 git：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/altercation/solarized.git</span><br></pre></td></tr></table></figure>
-<h2 id="Terminal/iTerm2"><a href="#Terminal/iTerm2" class="headerlink" title="Terminal/iTerm2"></a>Terminal/iTerm2</h2><p>Mac 环境下主要是自带的 Terminal 和 iTerm2 两个终端仿真器，iTerm2 因为对 split window 支持更好，更方便一些。</p>
-<p>从 git 克隆下来的文件夹里已经分别放置了针对 Terminal 和 iTerm2 的配置文件，找到相应文件夹双击打开就会自动导入配色方案 Light 和 Dark。</p>
-<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>Vim 的配色如果不单独设置会十分别扭，Github 上也有 Vim 单独的 <a href="https://github.com/altercation/vim-colors-solarized" target="_blank" rel="external">repo</a>，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/altercation/vim-colors-solarized.git</span><br><span class="line">$ <span class="built_in">cd</span> vim-colors-solarized/colors</span><br><span class="line">$ mkdir -p ~/.vim/colors</span><br><span class="line">$ cp solarized.vim ~/.vim/colors/</span><br><span class="line"></span><br><span class="line">$ vim ~/.vimrc</span><br><span class="line">syntax <span class="built_in">enable</span></span><br><span class="line"><span class="built_in">set</span> background=dark</span><br><span class="line">colorscheme solarized</span><br></pre></td></tr></table></figure>
-<p>大概像这样：</p>
-<p><img src="http://ww4.sinaimg.cn/mw1024/006kPMzBgw1ezawotvtnqj30hm0id0v5.jpg" alt="Java Demo" title="Java Demo"></p>
-<h2 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h2><p>查阅了一些资料，了解到 Mac OS X 是基于 FreeBSD 的，所以一些工具 ls, top 等都是 BSD 那一套，ls 不是 GNU ls，所以即使 Terminal/iTerm2 配置了颜色，但是在 Mac 上敲入 ls 命令也不会显示高亮，可以通过安装 coreutils 来解决（brew install coreutils），不过如果对 ls 颜色不挑剔的话有个简单办法就是在 .bash_profile 里输出 CLICOLOR=1：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ vim ~/.bash_profile</span><br><span class="line"><span class="built_in">export</span> CLICOLOR=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://ww3.sinaimg.cn/mw1024/006kPMzBgw1ezawoufcfnj30hn03daah.jpg" alt="ls Demo" title="ls Demo"></p>
+        <p>最近研究 Python 通过 Docker 搭建开发环境和快速部署的实践，参考 GitHub 上面一个很不错的 <a href="https://github.com/QingdaoU/OnlineJudge" target="_blank" rel="external">OJ 项目</a>。项目文档写得很详细，本想在本机上轻松搭建开发环境，没想到 Mac 上的 Docker 因为隔了层虚拟机，具体实现上来各种问题。</p>
+<h2 id="u5173_u4E8E_Docker"><a href="#u5173_u4E8E_Docker" class="headerlink" title="关于 Docker"></a>关于 Docker</h2><p>我的理解，Docker 是一个从 Linux 上基于容器发展起来的超轻量级「虚拟环境」，它将每个应用分为一个个容器隔离开来，建立成一个个 image，而根据 image 又能快速启动相应的 container，container 就像一个个小型「虚拟机」一样为应用的运行提供相应的环境。与此同时，容器之间也能通过 docker-compose 这样的工具互相联系，建立成熟的应用架构。</p>
+<p>通俗来说，images 就像菜谱，container 就像根据相应菜谱烹饪出的菜肴，当制定和完善好了菜谱以后，菜肴可以因为 container 的轻量级，快速地启动起来，不管是搭建开发环境还是部署到生产环境都十分快速方便。</p>
+<h2 id="u5173_u4E8E_Mac__u4E0A_u7684_Docker"><a href="#u5173_u4E8E_Mac__u4E0A_u7684_Docker" class="headerlink" title="关于 Mac 上的 Docker"></a>关于 Mac 上的 Docker</h2><p>由于是边学边做，实际在 Mac 上的实践并没有那么顺利，参考各种文档的同时，也经常陷入方案的失败中，总结来说，一是 Mac 上的 Docker 在挂载主机目录的时候，会因为虚拟机没有修改目录权限的权限，导致 Docker Container 内应用时常出现权限错误；二也是 Mac 需要在虚拟机上实现 Docker，使得 Docker 配置时候的具体细节需要结合虚拟机来思考，照搬现成的配置文件经常会有问题，需要耐下性子对 Docker 每个配置都理解清楚。</p>
+<h2 id="Mac_Docker__u6743_u9650_u95EE_u9898_u7684_u89E3_u51B3"><a href="#Mac_Docker__u6743_u9650_u95EE_u9898_u7684_u89E3_u51B3" class="headerlink" title="Mac Docker 权限问题的解决"></a>Mac Docker 权限问题的解决</h2><p>主流的解决方案有两种：</p>
+<ol>
+<li><p>构建镜像的时候强制设置用户的 UID 为 1000，比如 mysql 就要在构建时设置用户 mysql 的 UID 为1000</p>
+</li>
+<li><p>更好的方案是专门启动一个比如 ubuntu 的 container 专门用作数据镜像，用它挂载所有需要挂载的主机目录，然后其他 container 通过 <code>-- volumes from</code> 这个 container 来实现和主机的数据通信和持久化</p>
+</li>
+</ol>
+<p>当然，之前也是听说 Docker 官方出了 Docker for Mac 的 beta 版本，能解决这个问题，果断前往申请了激活码。链接在 <a href="http://beta.docker.com" target="_blank" rel="external">这里</a></p>
+<h2 id="u5B9E_u8DF5_u8FC7_u7A0B_u91CD_u70B9_u7B80_u8FF0"><a href="#u5B9E_u8DF5_u8FC7_u7A0B_u91CD_u70B9_u7B80_u8FF0" class="headerlink" title="实践过程重点简述"></a>实践过程重点简述</h2><p>首先，拉取所需的镜像，由于先前提到的权限问题，即使是 mysql 也不能直接使用，需要通过 Dockerfile Run 一下 设置 UID 的部分，重新覆盖成新的 images，Python 的项目也是如此。</p>
+<p>最终需要通过 Nginx 反代实现浏览器访问，link 主 Python 项目的同时了解到所谓 link 的实质就是在 <code>/etc/hosts</code> 中添加了容器间的 ip 定向，需要具体查看后对 <code>nginx.conf</code> 进行相应的修改。特别地，要实现 nginx 配置文件由主机修改可以有两种方法，一是在 <code>nginx.conf</code> 中通过 <code>include</code> 挂载主机的目录，二是设置每次启动容器时执行拷贝操作，前者的「动态」性更强一些，不需要重启 nginx 容器只需要重启 nginx 服务即可生效了。</p>
+<h2 id="u5176_u4ED6_u4E00_u4E9B_u53C2_u8003"><a href="#u5176_u4ED6_u4E00_u4E9B_u53C2_u8003" class="headerlink" title="其他一些参考"></a>其他一些参考</h2><p>Docker 从入门到实践电子书： <a href="https://www.gitbook.com/book/yeasy/docker_practice" target="_blank" rel="external">https://www.gitbook.com/book/yeasy/docker_practice</a></p>
+<p>一种解决 Docker Mac 下权限问题的方法： <a href="https://segmentfault.com/q/1010000004002397" target="_blank" rel="external">https://segmentfault.com/q/1010000004002397</a></p>
+<p>Mac 上搭建 Docker 多容器开发环境的实践： <a href="http://sinle.me/2016/01/24/记录用Docker创建一整套%20php7+lumen+mysql5.7+openresty%20开发环境/" target="_blank" rel="external">http://sinle.me/2016/01/24/记录用Docker创建一整套%20php7+lumen+mysql5.7+openresty%20开发环境/</a></p>
+<p>Nginx 日志相关： <a href="http://blog.chinaunix.net/uid-22312037-id-4089710.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-22312037-id-4089710.html</a></p>
+<p>官方文档关于 Docker Compose 实践的部分： <a href="https://docs.docker.com/compose/django/" target="_blank" rel="external">https://docs.docker.com/compose/django/</a></p>
+<p>Docker 常用命令（上）： <a href="https://segmentfault.com/a/1190000000751601" target="_blank" rel="external">https://segmentfault.com/a/1190000000751601</a></p>
+<p>Docker 常用命令（下）： <a href="https://segmentfault.com/a/1190000000759971" target="_blank" rel="external">https://segmentfault.com/a/1190000000759971</a></p>
 
       
     </div>
@@ -309,7 +301,11 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
       
         <div class="post-tags">
           
+            <a href="/tags/Docker/" rel="tag">#Docker</a>
+          
             <a href="/tags/Mac/" rel="tag">#Mac</a>
+          
+            <a href="/tags/运维/" rel="tag">#运维</a>
           
         </div>
       
@@ -318,17 +314,13 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/13/chuang-kou-guan-li-ruan-jian-moom/" rel="next" title="窗口管理软件 MOOM">
-                <i class="fa fa-chevron-left"></i> 窗口管理软件 MOOM
+              <a href="/2016/02/15/resume/" rel="next" title="Resume">
+                <i class="fa fa-chevron-left"></i> Resume
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/25/从-Octopress-迁移到-Hexo/" rel="prev" title="从 Octopress 迁移到 Hexo">
-                从 Octopress 迁移到 Hexo <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +468,7 @@ Solarized 应该是目前最完整的配色项目之一，先前听">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Terminal/iTerm2"><span class="nav-number">1.</span> <span class="nav-text">Terminal/iTerm2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim"><span class="nav-number">2.</span> <span class="nav-text">Vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ls"><span class="nav-number">3.</span> <span class="nav-text">ls</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5173_u4E8E_Docker"><span class="nav-number">1.</span> <span class="nav-text">关于 Docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5173_u4E8E_Mac__u4E0A_u7684_Docker"><span class="nav-number">2.</span> <span class="nav-text">关于 Mac 上的 Docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mac_Docker__u6743_u9650_u95EE_u9898_u7684_u89E3_u51B3"><span class="nav-number">3.</span> <span class="nav-text">Mac Docker 权限问题的解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B9E_u8DF5_u8FC7_u7A0B_u91CD_u70B9_u7B80_u8FF0"><span class="nav-number">4.</span> <span class="nav-text">实践过程重点简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5176_u4ED6_u4E00_u4E9B_u53C2_u8003"><span class="nav-number">5.</span> <span class="nav-text">其他一些参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
